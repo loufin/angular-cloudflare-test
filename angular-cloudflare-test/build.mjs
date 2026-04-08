@@ -2,7 +2,7 @@ import { execSync } from 'child_process';
 
 const branch = process.env.WORKERS_CI_BRANCH || '';
 
-let config = 'development';
+let config = 'staging';
 
 if (branch === 'main') {
   config = 'production';
